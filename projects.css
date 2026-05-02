@@ -4,7 +4,7 @@
 .mega-areas-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-    grid-auto-rows: 420px; /* Optimized height */
+    grid-auto-rows: 450px; /* Matched with index.html */
     gap: 2rem;
     margin-bottom: 6rem;
 }
@@ -115,7 +115,6 @@
 .section-desc {
     color: var(--text-dim);
     font-size: 1.1rem;
-    margin-top: -2.5rem;
     margin-bottom: 3rem;
 }
 

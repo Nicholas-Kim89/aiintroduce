@@ -119,6 +119,10 @@ body {
 header {
     padding: 4rem 0;
     text-align: center;
+    min-height: 250px; /* Stabilize header height across pages */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .glitch-text {
