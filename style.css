@@ -119,7 +119,7 @@ body {
 header {
     padding: 4rem 0;
     text-align: center;
-    min-height: 250px; /* Stabilize header height across pages */
+    min-height: 300px; /* Stabilize header height for longer descriptions */
     display: flex;
     flex-direction: column;
     justify-content: center;
