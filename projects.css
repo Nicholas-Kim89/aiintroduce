@@ -1,5 +1,10 @@
 /* Project-Specific Styles */
 
+/* Force CX to start on a new row after EX */
+#cx {
+    grid-column-start: 1;
+}
+
 /* Mega Areas Grid */
 .mega-areas-grid {
     display: grid;
