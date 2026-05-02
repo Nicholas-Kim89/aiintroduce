@@ -1,5 +1,75 @@
-// Modal Logic and Project Data
+// Team Data
+const teamData = {
+    "kim-eunyong": {
+        name: "김은용",
+        role: "Team Leader",
+        badge: "TEAM LEADER",
+        mbti: "ENTJ",
+        major: "MBA (Digital Transformation)",
+        image: "assets/kim_eunyong.png",
+        bio: "AI 기술을 경영 전반에 녹여내어 실질적인 비즈니스 가치를 창출하는 데 집중하고 있습니다. 데이터 기반의 전략적 의사결정 체계를 구축하는 것이 저의 핵심 미션입니다.",
+        strengths: ["Strategic Thinking", "Change Management", "AI Governance"],
+        projects: ["AI Strategy Roadmap 2025", "LLM-based Knowledge Management", "Corporate AI Governance"]
+    },
+    "jeon_somin": {
+        name: "전소민",
+        role: "Professional",
+        badge: "PROFESSIONAL",
+        mbti: "INFJ",
+        major: "Statistics / Data Science",
+        image: "assets/jeon_somin.png",
+        bio: "복잡한 데이터 속에서 의미 있는 인사이트를 추출하여 비즈니스 문제를 해결합니다. 예측 모델링을 통해 미래 리스크를 관리하고 최적화된 솔루션을 제공합니다.",
+        strengths: ["Statistical Modeling", "Python/R", "Data Visualization"],
+        projects: ["Predictive Market Analytics", "Supply Chain Optimization", "Customer Churn Prediction"]
+    },
+    "oh_seunghwan": {
+        name: "오승환",
+        role: "Professional",
+        badge: "PROFESSIONAL",
+        mbti: "ESTP",
+        major: "Computer Engineering",
+        image: "assets/oh_seunghwan.png",
+        bio: "최신 AI 기술을 실제 현장에 적용 가능한 시스템으로 구현하는 데 열정을 가지고 있습니다. 엣지 컴퓨팅과 컴퓨터 비전 기술을 활용한 스마트 팩토리 구현이 전문입니다.",
+        strengths: ["Edge AI Implementation", "Computer Vision", "System Architecture"],
+        projects: ["Smart Factory Edge AI", "Computer Vision QA System", "Multi-agent Robotic Coordination"]
+    },
+    "son_juhee": {
+        name: "손주희",
+        role: "Specialist",
+        badge: "SPECIALIST",
+        mbti: "ENFP",
+        major: "UX Design",
+        image: "assets/son_juhee.png",
+        bio: "사용자 중심의 관점에서 AI 기술이 어떻게 인간과 상호작용해야 하는지 고민합니다. 복잡한 AI 기능을 직관적이고 아름다운 인터페이스로 풀어내는 것이 저의 목표입니다.",
+        strengths: ["UX/UI Design", "User Research", "Interaction Design"],
+        projects: ["AI Assistant UX Design", "Human-Centered AI Interface", "Interactive Data Dashboard"]
+    },
+    "lee_seonggyu": {
+        name: "이성규",
+        role: "Specialist",
+        badge: "SPECIALIST",
+        mbti: "INTP",
+        major: "Applied Mathematics",
+        image: "assets/lee_seonggyu.png",
+        bio: "수학적 모델링과 알고리즘을 통해 최적의 해답을 찾습니다. 강화 학습과 리스크 평가 모델링을 통해 효율적인 자원 배분과 수익 극대화 전략을 연구합니다.",
+        strengths: ["Reinforcement Learning", "Algorithm Design", "Financial Modeling"],
+        projects: ["RL for Resource Allocation", "Risk Assessment Modeling", "Algorithmic Trading AI"]
+    },
+    "hong_sohee": {
+        name: "홍소희",
+        role: "Specialist",
+        badge: "SPECIALIST",
+        mbti: "ESFJ",
+        major: "Marketing",
+        image: "assets/hong_sohee.png",
+        bio: "AI 기술을 마케팅과 커뮤니케이션 영역에 접목하여 고객 경험을 혁신합니다. 감성 분석과 자동화된 인게이지먼트 도구를 통해 브랜드 가치를 높이는 활동에 집중합니다.",
+        strengths: ["AI Marketing", "Sentiment Analysis", "Content Strategy"],
+        projects: ["Personalized Marketing AI", "Sentiment Analysis Tool", "Automated Engagement Bot"]
+    }
+};
+
 const projectData = {
+
     "회의 생산성 향상": {
         area: "전사 EX",
         owner: "오승환, 이성규",
@@ -179,13 +249,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Modal Logic
-    const modal = document.getElementById('projectModal');
-    if (modal) {
-        const closeBtn = modal.querySelector('.close-btn');
-        const overlay = modal.querySelector('.modal-overlay');
+    // Modal Logic for Projects
+    const projectModal = document.getElementById('projectModal');
+    if (projectModal) {
+        const closeBtn = projectModal.querySelector('.close-btn');
+        const overlay = projectModal.querySelector('.modal-overlay');
 
-        // Open Modal
         document.querySelectorAll('.task-item, .squad-card').forEach(card => {
             card.addEventListener('click', () => {
                 const titleElement = card.querySelector('h3');
@@ -209,22 +278,78 @@ document.addEventListener('DOMContentLoaded', () => {
                         featuresList.appendChild(li);
                     });
 
-                    modal.classList.add('active');
+                    projectModal.classList.add('active');
                     document.body.style.overflow = 'hidden';
                 }
             });
         });
 
-        // Close Modal
-        const closeModal = () => {
-            modal.classList.remove('active');
+        const closeProjectModal = () => {
+            projectModal.classList.remove('active');
             document.body.style.overflow = '';
         };
 
-        closeBtn.addEventListener('click', closeModal);
-        overlay.addEventListener('click', closeModal);
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
-        });
+        closeBtn.addEventListener('click', closeProjectModal);
+        overlay.addEventListener('click', closeProjectModal);
     }
+
+    // Modal Logic for Team Members
+    const teamModal = document.getElementById('teamModal');
+    if (teamModal) {
+        const closeBtn = teamModal.querySelector('.close-btn');
+        const overlay = teamModal.querySelector('.modal-overlay');
+
+        document.querySelectorAll('.member-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const memberId = card.id;
+                const data = teamData[memberId];
+                
+                if (data) {
+                    document.getElementById('teamModalImg').src = data.image;
+                    document.getElementById('teamModalName').innerText = data.name;
+                    document.getElementById('teamModalRole').innerText = data.role;
+                    document.getElementById('teamModalBadge').innerText = data.badge;
+                    document.getElementById('teamModalMbti').innerText = `MBTI: ${data.mbti}`;
+                    document.getElementById('teamModalMajor').innerText = `Major: ${data.major}`;
+                    document.getElementById('teamModalBio').innerText = data.bio;
+                    
+                    const strengthsList = document.getElementById('teamModalStrengths');
+                    strengthsList.innerHTML = '';
+                    data.strengths.forEach(s => {
+                        const span = document.createElement('span');
+                        span.className = 'strength-tag';
+                        span.innerText = s;
+                        strengthsList.appendChild(span);
+                    });
+
+                    const projectsList = document.getElementById('teamModalProjects');
+                    projectsList.innerHTML = '';
+                    data.projects.forEach(p => {
+                        const li = document.createElement('li');
+                        li.innerText = p;
+                        projectsList.appendChild(li);
+                    });
+
+                    teamModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        const closeTeamModal = () => {
+            teamModal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        closeBtn.addEventListener('click', closeTeamModal);
+        overlay.addEventListener('click', closeTeamModal);
+    }
+
+    // Generic Modal Close on ESC
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+            document.body.style.overflow = '';
+        }
+    });
 });

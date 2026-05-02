@@ -199,6 +199,50 @@
         <p>&copy; 2026 Management Innovation AX Team. Shaping the future with AI.</p>
     </footer>
 
+    <!-- Team Detail Modal -->
+    <div id="teamModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container team-modal-container">
+            <button class="close-btn">&times;</button>
+            <div class="modal-content team-modal-content">
+                <div class="modal-left">
+                    <div class="modal-image-wrapper">
+                        <img id="teamModalImg" src="" alt="Team Member">
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="modal-header">
+                        <span id="teamModalBadge" class="modal-badge">RANK</span>
+                        <h2 id="teamModalName">Member Name</h2>
+                        <p id="teamModalRole" class="modal-subtitle">Role</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="info-row">
+                            <span id="teamModalMbti" class="info-tag">MBTI: -</span>
+                            <span id="teamModalMajor" class="info-tag">Major: -</span>
+                        </div>
+                        <div class="detail-section">
+                            <h4>BIO / MISSION</h4>
+                            <p id="teamModalBio">Detailed bio goes here...</p>
+                        </div>
+                        <div class="detail-section">
+                            <h4>CORE STRENGTHS</h4>
+                            <div id="teamModalStrengths" class="strengths-grid">
+                                <!-- Strength tags will be injected here -->
+                            </div>
+                        </div>
+                        <div class="detail-section">
+                            <h4>AX PROJECTS</h4>
+                            <ul id="teamModalProjects" class="modal-project-list">
+                                <!-- Projects will be injected here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
