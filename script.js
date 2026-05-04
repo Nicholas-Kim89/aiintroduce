@@ -2,76 +2,76 @@
 const teamData = {
     "kim-eunyong": {
         name: "김은용",
-        role: "Team Leader",
+        role: "경영혁신AX팀 팀장",
         badge: "TEAM LEADER",
-        mbti: "ENTJ",
-        major: "MBA (Digital Transformation)",
+        mbti: "ISFJ",
+        major: "화공생명공학 석사 / 화학공학 학사",
         image: "assets/kim_eunyong.png",
-        bio: "AI 기술을 경영 전반에 녹여내어 실질적인 비즈니스 가치를 창출하는 데 집중하고 있습니다. 데이터 기반의 전략적 의사결정 체계를 구축하는 것이 저의 핵심 미션입니다.",
-        strengths: ["Strategic Thinking", "Change Management", "AI Governance"],
-        projects: ["AI Strategy Roadmap 2025", "LLM-based Knowledge Management", "Corporate AI Governance"]
+        bio: "15년간 최적화 및 AI 기술 기반의 비즈니스 솔루션 개발을 이끌며, 화학공학 도메인 지식과 AI 기술을 융합하여 제조 공정 및 공급망 최적화의 실질적 가치를 창출하고 있습니다.",
+        strengths: ["도메인-AI 융합", "생산/공급망 최적화", "조직 리더십"],
+        projects: ["생산·공급 계획 최적화 시스템", "타겟 코스팅 기반 원가 분석", "수요/공급 예측 모델링"]
     },
     "jeon_somin": {
         name: "전소민",
-        role: "Professional",
+        role: "데이터사이언스_LGC 책임",
         badge: "PROFESSIONAL",
-        mbti: "INFJ",
-        major: "Statistics / Data Science",
+        mbti: "-",
+        major: "생명화학공학 학사",
         image: "assets/jeon_somin.png",
-        bio: "복잡한 데이터 속에서 의미 있는 인사이트를 추출하여 비즈니스 문제를 해결합니다. 예측 모델링을 통해 미래 리스크를 관리하고 최적화된 솔루션을 제공합니다.",
-        strengths: ["Statistical Modeling", "Python/R", "Data Visualization"],
-        projects: ["Predictive Market Analytics", "Supply Chain Optimization", "Customer Churn Prediction"]
+        bio: "9년간의 현장 경험과 생명화학공학 지식을 바탕으로, 석유화학 공정 메커니즘을 반영한 스케줄링 최적화 및 품질 분석 AI 모델을 현장에 적용하고 있습니다.",
+        strengths: ["현장 공정 이해도", "스케줄링 최적화", "AI 모델 현장 적용"],
+        projects: ["제조 공정 스케줄링 최적화", "생산 제품 품질 예측", "센서 데이터 신뢰성 확보"]
     },
     "oh_seunghwan": {
         name: "오승환",
-        role: "Professional",
+        role: "경영혁신AX팀 책임",
         badge: "PROFESSIONAL",
-        mbti: "ESTP",
-        major: "Computer Engineering",
+        mbti: "-",
+        major: "화공생명공학 박사 / 화공생명공학 학사",
         image: "assets/oh_seunghwan.png",
-        bio: "최신 AI 기술을 실제 현장에 적용 가능한 시스템으로 구현하는 데 열정을 가지고 있습니다. 엣지 컴퓨팅과 컴퓨터 비전 기술을 활용한 스마트 팩토리 구현이 전문입니다.",
-        strengths: ["Edge AI Implementation", "Computer Vision", "System Architecture"],
-        projects: ["Smart Factory Edge AI", "Computer Vision QA System", "Multi-agent Robotic Coordination"]
+        bio: "화공생명공학 박사 학위의 도메인 지식과 데이터 사이언스 역량을 결합하여, 제조 현장의 복잡한 데이터를 분석하고 공정 최적화 및 이상 감지 모델을 개발합니다.",
+        strengths: ["공정 최적화", "이상 감지 모델링", "생산 계획 최적화"],
+        projects: ["석유화학 설비 예지보전", "생명과학 수율 예측", "원심 분리 공정 사전 이상 진단"]
     },
     "son_juhee": {
         name: "손주희",
-        role: "Specialist",
+        role: "데이터사이언스_LGC 선임",
         badge: "SPECIALIST",
-        mbti: "ENFP",
-        major: "UX Design",
+        mbti: "-",
+        major: "산업경영공학 석사 / 기술경영학 학사",
         image: "assets/son_juhee.png",
-        bio: "사용자 중심의 관점에서 AI 기술이 어떻게 인간과 상호작용해야 하는지 고민합니다. 복잡한 AI 기능을 직관적이고 아름다운 인터페이스로 풀어내는 것이 저의 목표입니다.",
-        strengths: ["UX/UI Design", "User Research", "Interaction Design"],
-        projects: ["AI Assistant UX Design", "Human-Centered AI Interface", "Interactive Data Dashboard"]
+        bio: "산업경영공학 지식을 바탕으로 제조 및 금융 도메인의 데이터를 비즈니스 인사이트로 전환하며, 텍스트 마이닝과 이미지 분석 등 다양한 AI 프로젝트를 수행합니다.",
+        strengths: ["텍스트 마이닝", "이미지 분석", "데이터 모형화"],
+        projects: ["납사/PVC 가격 예측", "설비 이상 감지 및 불량률 관리", "임상 데이터 모형화"]
     },
     "lee_seonggyu": {
         name: "이성규",
-        role: "Specialist",
+        role: "데이터사이언스_LGC 선임",
         badge: "SPECIALIST",
-        mbti: "INTP",
-        major: "Applied Mathematics",
+        mbti: "-",
+        major: "기계공학 석사 / 기계공학 학사",
         image: "assets/lee_seonggyu.png",
-        bio: "수학적 모델링과 알고리즘을 통해 최적의 해답을 찾습니다. 강화 학습과 리스크 평가 모델링을 통해 효율적인 자원 배분과 수익 극대화 전략을 연구합니다.",
-        strengths: ["Reinforcement Learning", "Algorithm Design", "Financial Modeling"],
-        projects: ["RL for Resource Allocation", "Risk Assessment Modeling", "Algorithmic Trading AI"]
+        bio: "기계공학 도메인 지식과 실무 경력을 바탕으로 AI 알고리즘을 개발하며, 현업의 공정 데이터를 비즈니스 가치로 전환하는 DX 웹 서비스를 구축 및 배포합니다.",
+        strengths: ["AI 알고리즘 개발", "DX 웹 서비스 구축", "공정 데이터 분석"],
+        projects: ["공정 데이터 기반 AI 서비스", "DX 웹 서비스 배포", "물리적 특성 반영 AI 모델링"]
     },
     "hong_sohee": {
         name: "홍소희",
-        role: "Specialist",
+        role: "데이터사이언스_LGC 선임",
         badge: "SPECIALIST",
-        mbti: "ESFJ",
-        major: "Marketing",
+        mbti: "-",
+        major: "컴퓨터공학 학사",
         image: "assets/hong_sohee.png",
-        bio: "AI 기술을 마케팅과 커뮤니케이션 영역에 접목하여 고객 경험을 혁신합니다. 감성 분석과 자동화된 인게이지먼트 도구를 통해 브랜드 가치를 높이는 활동에 집중합니다.",
-        strengths: ["AI Marketing", "Sentiment Analysis", "Content Strategy"],
-        projects: ["Personalized Marketing AI", "Sentiment Analysis Tool", "Automated Engagement Bot"]
+        bio: "컴퓨터공학 기반의 IT 기술력과 석유화학 공정 지식을 결합하여, NCC 스케줄러 및 품질 예측 등 제조 현장의 핵심 과제를 주도적으로 리딩해 왔습니다.",
+        strengths: ["IT 기술-도메인 융합", "공정 운영 최적화", "프로젝트 리딩"],
+        projects: ["NCC AI 스케줄러", "제품 품질 예측 모델", "CS AI Assistant"]
     }
 };
 
 const projectData = {
 
     "회의 생산성 향상": {
-        area: "전사 EX",
+        area: "경영일반",
         owner: "오승환, 이성규",
         goal: "회의 전-중-후 프로세스에 AI를 결합하여 불필요한 리소스 소모를 방지하고 결정 중심의 생산적 회의 문화를 구축합니다.",
         features: [
@@ -82,7 +82,7 @@ const projectData = {
         impact: "회의 준비 시간 30% 단축 및 회의록 작성 리소스 90% 절감"
     },
     "VELO AI": {
-        area: "전사 EX",
+        area: "경영일반",
         owner: "김은용",
         goal: "사내 지식 베이스와 LLM을 결합하여 임직원의 업무 효율을 극대화하는 지능형 AI 어시스턴트를 개발합니다.",
         features: [
@@ -104,7 +104,7 @@ const projectData = {
         impact: "고객 문의 응대 속도 개선 및 상담 품질의 상향 평준화"
     },
     "인재검색 Agent": {
-        area: "HR",
+        area: "인사",
         owner: "손주희",
         collab: "ERP PI 협업",
         goal: "방대한 사내 인재 데이터를 자연어로 검색하고 최적의 프로젝트 Squad를 구성할 수 있도록 지원합니다.",
@@ -116,7 +116,7 @@ const projectData = {
         impact: "인재 적재적소 배치 최적화 및 인사 관리 효율성 증대"
     },
     "인원/인건비 시뮬레이션 Agent": {
-        area: "HR",
+        area: "인사",
         owner: "손주희",
         collab: "ERP PI 협업",
         goal: "조직 개편이나 경영 계획 수립 시 인건비 변동을 정확히 시뮬레이션하여 전략적 의사결정을 돕습니다.",
@@ -128,7 +128,7 @@ const projectData = {
         impact: "경영 계획 수립 시간 단축 및 인건비 운영 리스크 최소화"
     },
     "리더 패트롤 AI": {
-        area: "환경/안전",
+        area: "환경안전",
         owner: "오승환",
         collab: "환경/안전AX 협업",
         goal: "현장의 위험 요소를 AI가 실시간으로 탐지하고 리더에게 즉시 알림을 제공하여 안전사고를 예방합니다.",
@@ -140,7 +140,7 @@ const projectData = {
         impact: "현장 안전 사고 발생률 40% 감소 및 안전 관리 자동화"
     },
     "구매 TASK AGENT": {
-        area: "구매/물류",
+        area: "구매",
         owner: "홍소희",
         collab: "구매/물류AX 협업",
         goal: "복잡한 구매 승인 프로세스와 문서 작성을 AI가 보조하여 구매 리드타임을 단축합니다.",
@@ -152,7 +152,7 @@ const projectData = {
         impact: "구매 업무 처리 속도 30% 향상 및 데이터 기반 투명한 구매 실현"
     },
     "소모품 가격 감지 AGENT": {
-        area: "구매/물류",
+        area: "구매",
         owner: "손주희",
         collab: "구매/물류AX팀 협업",
         goal: "외부 시장의 가격 변동 데이터를 실시간으로 모니터링하여 최적의 구매 시점을 제안합니다.",
@@ -164,7 +164,7 @@ const projectData = {
         impact: "구매 비용 절감 및 시장 변화에 대한 선제적 대응력 확보"
     },
     "채권 자동화 AGENT": {
-        area: "경영관리",
+        area: "회계금융",
         collab: "경영관리PI 협업",
         goal: "수작업 위주의 채권 관리 업무를 AI로 자동화하여 미수금 회수율을 높이고 운영 효율을 극대화합니다.",
         features: [
@@ -175,7 +175,7 @@ const projectData = {
         impact: "미수금 회수 기간 단축 및 수작업 오류 0% 실현"
     },
     "채권 리스크 감지 AGENT": {
-        area: "경영관리",
+        area: "회계금융",
         collab: "경영관리PI 협업",
         goal: "거래처의 재무 상태 및 시장 데이터를 분석하여 채권 부실 위험을 조기에 탐지합니다.",
         features: [
@@ -222,7 +222,7 @@ const projectData = {
         impact: "서베이 분석 리소스 절감 및 데이터 기반 맞춤형 리더십 육성"
     },
     "NCC 스케쥴러 개발": {
-        area: "생산",
+        area: "제조(생산,품질)",
         owner: "홍소희",
         collab: "석유화학제조AX 협업",
         goal: "석유화학 공정의 핵심인 NCC(Naphtha Cracking Center)의 운전 스케줄을 AI로 최적화하여 생산 효율을 극대화하고 에너지 소모를 최소화합니다.",
